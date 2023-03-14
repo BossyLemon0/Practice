@@ -3,7 +3,7 @@ import React from "react";
 
 function MainPage(){
     return(
-    <div>
+    <div data-cy="MainPage">
         Main Page
     </div>
     );

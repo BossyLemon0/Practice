@@ -84,7 +84,7 @@ function MainLayoutPage() {
     setOpen(false);
   };
     return (
-      <Box sx={{ display: 'flex' }}>
+      <Box sx={{ display: 'flex' }} data-cy="MainPageLayout">
         <CssBaseline />
         <AppBar position="fixed" open={open}>
           <Toolbar>

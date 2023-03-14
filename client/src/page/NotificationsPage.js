@@ -3,7 +3,7 @@ import React from "react";
 
 function NotificationsPage(){
     return(
-    <div>
+    <div data-cy="NotifcationPage">
         Notifcation page
     </div>
     );
