@@ -21,6 +21,7 @@ jobs:
           # https://docs.cypress.io/guides/continuous-integration/introduction#Boot-your-server
           start: npm run develop
           wait-on: 'http://localhost:3000' # Waits for above
+          wait-on-timeout: 20000
           # Records to Cypress Cloud 
           # https://docs.cypress.io/guides/cloud/projects#Set-up-a-project-to-record
           record: true
