@@ -24,23 +24,23 @@ function App() {
   return (
 
     <ThemeProvider theme={darkTheme}>
-    <Box
-    sx ={{
-      display:'flex',
-      bgcolor: 'background.default',
-      color:'text.primary'
-    }}
-    >
+      <Box
+      sx ={{
+        display:'flex',
+        bgcolor: 'background.default',
+        color:'text.primary'
+      }}
+      >
 
-    <BrowserRouter>
-      <Routes>
-        <Route path ="/" element = {StartPage()}/> 
-        <Route path ="/MainLayout/*" element = {MainLayoutPage()}/> 
+      <BrowserRouter>
+        <Routes>
+          <Route path ="/" element = {StartPage()}/> 
+          <Route path ="/MainLayout/*" element = {MainLayoutPage()}/> 
 
-      </Routes>
-    </BrowserRouter>
-    <ColorModeButton />
-    </Box>
+        </Routes>
+      </BrowserRouter>
+      <ColorModeButton />
+      </Box>
     </ThemeProvider>
 
   );
