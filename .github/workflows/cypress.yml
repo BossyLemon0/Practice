@@ -11,8 +11,6 @@ jobs:
       matrix:
         containers: [1, 2] # Uses 2 parallel instances
     steps:
-      - name: Display env port variable
-        run: echo ${{ env.PORT }}
       - name: Checkout
         uses: actions/checkout@v3
       - name: Cypress run
@@ -33,3 +31,4 @@ jobs:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           # Creating a token https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PORT: 3001
