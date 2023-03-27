@@ -4,7 +4,7 @@ import '../styles/Start.css'
 
 function StartPage(){
     return(
-    <div data-cy="StartPage">
+    <div data-cy="StartPage" class = "StartPage">
         start page
     </div>
     );
