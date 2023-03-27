@@ -32,7 +32,10 @@ function App() {
           <Route path ="/MainLayout/*" element = {MainLayoutPage()}/> 
         </Routes>
       </BrowserRouter>
+      <div style={{ position: 'absolute', right: 100, bottom: 100 }}>
       <ColorModeButton />
+      </div>
+
       </Box>
 
   );

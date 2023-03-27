@@ -12,8 +12,8 @@ function ColorModeButton(){
 
     
     return(
-        <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
-        {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+        <IconButton sx={{ ml: 1 , width: 85, height: 85 }} onClick={colorMode.toggleColorMode} color="inherit">
+        {theme.palette.mode === 'dark' ? <Brightness7Icon sx={{fontSize: 60}} /> : <Brightness4Icon sx={{fontSize: 65}}/>}
         </IconButton>
     );
 

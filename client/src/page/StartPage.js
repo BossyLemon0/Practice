@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/Start.css'
 
 
 function StartPage(){
